@@ -114,4 +114,10 @@ Następnym krokiem jest uruchomienie wiersza poleceń w lokalizacji plików proj
 ```bash
 python -m pytest
 ```
-
+## Alternatywne rozwiązanie używając zewnętrznych bibliotek
+Możnaby użyc biblioteki pandas. Wymagałoby to początkowo przekonwertowania pliku z danymi do struktury DataFrame. Wyliczanie danych wartości ograniczyłoby się wtedy do kilku linijek. Przykładowo wyliczenie  średniej liczby osób jakie przystąpiły do matury do 2015 roku w wojewódzctwie Pomorskim
+```python
+import pandas as pd
+data = pd.read_csv("Liczba_osób_które_przystapiły_lub_zdały_egzamin_maturalny.csv")
+avgAttendence = data.liczba_osob[(data.przystąpiło_zdało == 'Przystąpiło') & (data.terytorium == 'Pomorskie') & (data.rok <= 2015)].mean()
+```
