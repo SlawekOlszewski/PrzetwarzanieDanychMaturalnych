@@ -104,3 +104,14 @@ Pomorskie -po
 Warmińsko-Mazurskie -wm
 
 Zachodniopomorskie -zp
+
+## Testy
+Aby uruchomić napisane przeze mnie testy jednostkowe, należy najpierw zainstalować bibliotekę pytest poprzez wpisanie w linii poleceń
+```bash
+pip install pytest
+```
+Następnym krokiem jest uruchomienie wiersza poleceń w lokalizacji plików projektu i wpisanie komendy
+```bash
+python -m pytest
+```
+
