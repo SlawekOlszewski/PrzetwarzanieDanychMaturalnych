@@ -4,7 +4,6 @@ from klasa import Wojewodzctwo
 
 def main():
 
-    ##############czytanie pliku###############
     filename = "Liczba_osób_które_przystapiły_lub_zdały_egzamin_maturalny.csv"
     scores = []
     lista_wojewodzctw = []
@@ -17,7 +16,6 @@ def main():
     wojewodzctwa_nazwy = ['Polska', 'Dolnośląskie', 'Kujawsko-pomorskie', 'Lubelskie', 'Lubuskie', 'Łódzkie', 'Małopolskie',
                           'Mazowieckie', 'Opolskie', 'Podkarpackie', 'Podlaskie', 'Pomorskie', 'Śląskie',
                           'Świętokrzyskie', 'Warmińsko-Mazurskie', 'Zachodniopomorskie']
-    ###########################################
 
     woj_dict = {"-pl": 0, "-ds": 1, "-kp": 2, "-lbe": 3, "-lbu": 4, "-lo": 5, "-mp": 6, "-mz": 7, "-op": 8, "-pdk": 9,
                 "-pdl": 10,
